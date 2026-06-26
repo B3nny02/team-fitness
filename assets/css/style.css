@@ -1,23 +1,23 @@
 /* ============================================================
-   WOLF GYM RENDE — style.css
-   Palette "Wolf Pack": #0d0d0d · #1a1a1a · #e8491d · #8a8a8a · #f2f2f0 · #ff6b35
+   ASD TEAM FITNESS FORLÌ — style.css
+   Palette: #1a1a1a · #222222 · #5cb85c · #8a8a8a · #f2f2f0 · #6fcc6f
    Font: Montserrat (display) · Inter (body)
    ============================================================ */
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg:        #0d0d0d;
-  --bg2:       #1a1a1a;
-  --surface:   #1a1a1a;
-  --surface2:  #242424;
-  --accent:    #e8491d;
-  --accent-dark: #c03a12;
-  --accent-hover: #ff6b35;
+  --bg:        #1a1a1a;
+  --bg2:       #222222;
+  --surface:   #2a2a2a;
+  --surface2:  #333333;
+  --accent:    #5cb85c;
+  --accent-dark: #4a9a4a;
+  --accent-hover: #6fcc6f;
   --white:     #f2f2f0;
   --muted:     #8a8a8a;
   --border:    rgba(255,255,255,0.08);
-  --glow:      0 0 48px rgba(232,73,29,0.40);
+  --glow:      0 0 48px rgba(92,184,92,0.40);
   --r:         12px;
   --font-d:    'Montserrat', sans-serif;
   --font-b:    'Inter', sans-serif;
@@ -52,7 +52,7 @@ button { font-family: inherit; }
 }
 
 .red  { color: var(--accent); }
-.glow { text-shadow: 0 0 32px rgba(232,73,29,0.65); }
+.glow { text-shadow: 0 0 32px rgba(92,184,92,0.65); }
 
 /* ── ANIMATIONS ────────────────────────────────────────── */
 @keyframes ping     { 75%,100% { transform:scale(2); opacity:0; } }
@@ -99,7 +99,7 @@ button { font-family: inherit; }
   cursor: pointer;
   transition: border-color .2s, color .2s, background .2s;
 }
-.btn-ghost:hover { border-color: var(--accent); color: var(--accent); background: rgba(232,73,29,.06); }
+.btn-ghost:hover { border-color: var(--accent); color: var(--accent); background: rgba(92,184,92,.06); }
 
 /* ── NAVBAR ────────────────────────────────────────────── */
 #navbar {
@@ -354,7 +354,7 @@ button { font-family: inherit; }
   transition: background .2s;
 }
 .h-row:last-child { border-bottom: none; }
-.h-row.today {   background: rgba(232,73,29,.06); }
+.h-row.today {   background: rgba(92,184,92,.06); }
 .h-day {
   display: flex; align-items: center; gap: 10px;
   font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: .04em;
@@ -363,7 +363,7 @@ button { font-family: inherit; }
 .h-dot { width:7px; height:7px; border-radius:50%; background:var(--accent); flex-shrink:0; }
 .h-sun-badge {
   display: inline-flex; align-items: center; gap:4px;
-  background: rgba(232,73,29,.15);
+  background: rgba(92,184,92,.15);
   padding: 2px 9px; border-radius: 999px;
   font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em;
   color: var(--accent);
@@ -387,7 +387,7 @@ button { font-family: inherit; }
   padding: 28px 24px;
   transition: border-color .25s, background .25s, transform .25s;
 }
-.srv-card:hover { border-color: rgba(232,73,29,.4); background: var(--surface2); transform: translateY(-3px); }
+.srv-card:hover { border-color: rgba(92,184,92,.4); background: var(--surface2); transform: translateY(-3px); }
 .srv-icon {
   width: 52px; height: 52px;
   border-radius: 12px;
@@ -460,7 +460,7 @@ button { font-family: inherit; }
 .gal-info { position: absolute; bottom: 0; left: 0; right: 0; padding: 20px; }
 .gal-tag {
   display: inline-flex;
-  background: rgba(232,73,29,.9);
+  background: rgba(92,184,92,.9);
   padding: 4px 10px; border-radius: 999px;
   font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: #fff;
   margin-bottom: 8px;
@@ -487,7 +487,7 @@ button { font-family: inherit; }
   display: flex; flex-direction: column;
   transition: border-color .25s, background .25s;
 }
-.staff-card:hover { border-color: rgba(232,73,29,.4); background: var(--surface2); }
+.staff-card:hover { border-color: rgba(92,184,92,.4); background: var(--surface2); }
 .staff-av {
   position: relative;
   aspect-ratio: 3/4;
@@ -497,14 +497,14 @@ button { font-family: inherit; }
 .staff-av-pat {
   position: absolute; inset: 0;
   background-image:
-    linear-gradient(rgba(232,73,29,.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(232,73,29,.04) 1px, transparent 1px);
+    linear-gradient(rgba(92,184,92,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(92,184,92,.04) 1px, transparent 1px);
   background-size: 40px 40px;
 }
 .staff-av-icon {
   position: absolute; inset: 0;
   display: grid; place-items: center;
-  color: rgba(232,73,29,.35);
+  color: rgba(92,184,92,.35);
 }
 .staff-av-fade {
   position: absolute; bottom:0; left:0; right:0; height:40%;
@@ -543,7 +543,7 @@ button { font-family: inherit; }
   inset: 0;
   transform: rotateY(180deg);
   background: linear-gradient(135deg, #1a0a0a 0%, #0a0a0a 50%, #1a0505 100%);
-  border: 1px solid rgba(232,73,29,0.4);
+  border: 1px solid rgba(92,184,92,0.4);
   border-radius: var(--r);
   display: flex;
   flex-direction: column;
@@ -573,7 +573,7 @@ button { font-family: inherit; }
 .staff-back-divider {
   width: 40px;
   height: 2px;
-  background: rgba(232,73,29,0.4);
+  background: rgba(92,184,92,0.4);
   border-radius: 2px;
   margin: 4px 0;
 }
@@ -710,7 +710,7 @@ button { font-family: inherit; }
   transition: border-color .2s, color .2s, background .2s;
   white-space: nowrap;
 }
-.con-chip:hover { border-color: var(--accent); color: var(--white); background: rgba(232,73,29,.08); }
+.con-chip:hover { border-color: var(--accent); color: var(--white); background: rgba(92,184,92,.08); }
 .con-chip-ico {
   width: 26px; height: 26px; flex-shrink: 0;
   border-radius: 50%; background: var(--surface2);
@@ -799,7 +799,7 @@ footer {
   top: 0; left: 0;
   height: 3px;
   width: 0%;
-  background: #e8491d;
+  background: #5cb85c;
   z-index: 99999;
   transition: width 0.1s linear;
   pointer-events: none;

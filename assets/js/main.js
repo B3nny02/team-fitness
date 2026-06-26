@@ -44,8 +44,8 @@ updateFloating();
 
 // ── LIVE STATUS ────────────────────────────────────────────
 const SCHED = [
-  [[8*60,21*60]], [[8*60,19*60]], [[8*60,21*60]],
-  [[8*60,19*60]], [[8*60,21*60]], [[10*60,12*60]],
+  [[9.5*60,22*60]], [[9.5*60,22*60]], [[9.5*60,22*60]],
+  [[9.5*60,22*60]], [[9.5*60,22*60]], [[10*60,18*60]],
   []
 ];
 const hhmm = m => String(Math.floor(m/60)).padStart(2,'0')+':'+String(m%60).padStart(2,'0');
@@ -91,11 +91,11 @@ function galScroll(dir) {
 
 // ── REVIEWS ────────────────────────────────────────────────
 const REVIEWS = [
-  { name: 'Franco', text: 'Box grandissimo, attrezzato e pulito. Organizzazione ai massimi livelli. La cortesia, la simpatia e soprattutto la professionalità, da parte di Salvatore e Stefania, hanno dato modo di creare un ambiente non solo dove "sudare", ma soprattutto un luogo di grande aggregazione.' },
-  { name: 'Salvatore', text: 'Ambiente e coach super motivante! Ogni volta impari qualcosa e migliori rispetto alla volta precedente! Stefania sempre pronta ad accoglierti con un gran sorriso' },
-  { name: 'Eugenio', text: 'Salvatore è una persona disponibile e qualificata. La struttura è grande e attrezzata nei minimi particolari per accontentare qualsiasi tipo di clientela.' },
-  { name: 'Maria', text: 'Ambiente familiare dove fare squadra è il must della palestra, con focus però sul proprio allenamento ed i propri obiettivi. Struttura spaziosa, in centro, ma fuori dal caos cittadino.' },
-  { name: 'Mattia', text: 'Palestra super attrezzata che la contraddistingue per professionalità, disponibilità e gentilezza. Consigliatissima.' },
+  { name: 'Chiara', text: 'Esperienza fantastica! Ci vado da anni ed è una garanzia. Ragazzi competenti, disponibili, gentili e specializzati in ogni problematica. I migliori!' },
+  { name: 'flo', text: 'La frequenta mio figlio. L\'attenzione che ho visto da parte dei personal trainer nei confronti di mio figlio è rassicurante. Ci siamo trovati molto bene con Erik, ragazzo dolcissimo, molto disponibile e sensibile.' },
+  { name: 'Andrea L.', text: 'Una palestra dove non manca nulla, professionalità molto alta dello Staff, pulizia, ti seguono in maniera ineccepibile e ti fanno sentire a tuo agio. LA STRACONSIGLIO!' },
+  { name: 'Matteo A.', text: 'Spazio danza per i bimbi veramente ottimo e insegnante molto valida!' },
+  { name: 'Alex', text: 'Una garanzia. Personale qualificato e preparato. Ambiente dove non manca la professionalità e la simpatia. Super consigliato!' },
 ];
 let rIdx = 0, rTimer;
 
